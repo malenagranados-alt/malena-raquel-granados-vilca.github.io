@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background-color: #82243b; color: #333; }
+
+    header { background-color: #4d0a1a; color: white; padding: 40px 20px; text-align: center; }
+    header img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 4px solid #420413; margin-bottom: 15px; }
+    header h1 { font-size: 2rem; margin-bottom: 5px; }
+    header p.subtitulo { font-size: 1rem; color: #ba3d5c; margin-bottom: 10px; }
+    header a.linkedin-btn { display: inline-block; margin-top: 10px; padding: 8px 18px; background-color: #ed5278; color: white; border-radius: 20px; text-decoration: none; font-size: 0.9rem; }
+    header a.linkedin-btn:hover { background-color: #084d99; }
+
+    .contenido { max-width: 800px; margin: 30px auto; padding: 0 20px; }
+    .seccion { background: white; border-radius: 10px; padding: 25px; margin-bottom: 25px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    .seccion h2 { font-size: 1.3rem; color: #2c3e50; border-bottom: 2px solid #e0e7ef; padding-bottom: 8px; margin-bottom: 15px; }
+    .seccion p { line-height: 1.7; color: #555; }
+
+    .curso { margin-bottom: 18px; }
+    .curso h3 { font-size: 1rem; color: #2c3e50; margin-bottom: 3px; }
+    .curso p { font-size: 0.9rem; color: #777; margin-bottom: 4px; }
+    .curso a { font-size: 0.85rem; color: #0a66c2; text-decoration: none; }
+    .curso a:hover { text-decoration: underline; }
+
+    .companeros-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+    .companero { background-color: #f0f4f8; border-radius: 8px; padding: 12px 16px; flex: 1 1 180px; text-align: center; }
+    .companero a { color: #2c3e50; text-decoration: none; font-size: 0.95rem; font-weight: 600; }
+    .companero a:hover { color: #0a66c2; }
+    .companero span { display: block; font-size: 0.8rem; color: #999; margin-top: 3px; }
+
+    footer { text-align: center; padding: 20px; font-size: 0.85rem; color: #aaa; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Cambia src por la URL de tu foto o pon "foto.jpg" si la subes junto al index.html -->
+    <img src="https://i.pravatar.cc/150?img=12" alt="Foto de perfil" />
+    <h1>Malena Raquel Granados Vilca</h1>
+    <p class="subtitulo">Estudiante de Ciencia de la Computación · Universidad Católica San Pablo </p>
+    <a class="linkedin-btn" href="https://www.linkedin.com/in/malena-raquel-granados-vilca-082930415" target="_blank">
+      ☆ Mi LinkedIn
+    </a>
+  </header>
+
+  <div class="contenido">
+
+    <!-- SOBRE MÍ -->
+    <div class="seccion">
+      <h2>☆ Sobre mí</h2>
+      <p>
+        ¡Hola! Soy estudiante de Ciencia de la Computación en la Universidad Católica San Pablo. Me interesa la programación,
+        el desarrollo web y aprender cosas nuevas cada día. Estoy en el primer semestre y poco a poco
+        voy construyendo mis proyectos y habilidades. Esta es mi página personal donde comparto
+        mis cursos y mis compañeros.
+      </p>
+    </div>
+
+    <!-- CURSOS -->
+    <div class="seccion">
+      <h2>☆ Mis cursos</h2>
+
+      <div class="curso">
+        <h3>Fundamentos de Programación</h3>
+        <p>Profesora: Prof. Julissa Villanueva Llerena</p>
+        <a href="https://www.linkedin.com/in/julissa-villanueva-llerena/" target="_blank">✦ LinkedIn de la profesora</a>
+      </div>
+
+      <div class="curso">
+        <h3>Fundamentos Matemáticos para Computación</h3>
+        <p>Profesor: Prof. Luis Fernando Diaz Basurco</p>
+        <a href="https://www.linkedin.com/in/luis-fernando-díaz-basurco-48098333/" target="_blank">✦ LinkedIn del profesor</a>
+      </div>
+
+      <div class="curso">
+        <h3>Introducción a Computación</h3>
+        <p>Profesor: Prof. Ernesto Cuadros Vargas</p>
+        <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">✦ LinkedIn del profesor</a>
+      </div>
+
+      <div class="curso">
+        <h3>Lógica</h3>
+        <p>Profesora: Prof. Kristel Gisselle Loayza Cruz</p>
+        <a href="-" target="_blank">✦ -</a>
+      </div>
+      
+      <div class="curso">
+        <h3>Historia de la Cultura</h3>
+        <p>Profesor: Prof. Gonzalo Jose Pedro Presbitero Rodriguez</p>
+        <a href="-" target="_blank">✦ -</a>
+      </div>
+    </div>
+
+    <!-- COMPAÑEROS -->
+    <div class="seccion">
+      <h2>👥 Páginas de mis compañeros</h2>
+      <div class="companeros-grid">
+
+        <div class="companero">
+          <a href="https://usuario1.github.io" target="_blank">Ana Flores</a>
+          <span>github.io</span>
+        </div>
+
+        <div class="companero">
+          <a href="https://usuario2.github.io" target="_blank">Luis Mamani</a>
+          <span>github.io</span>
+        </div>
+
+        <div class="companero">
+          <a href="https://usuario3.github.io" target="_blank">Sofía Quispe</a>
+          <span>github.io</span>
+        </div>
+
+        <div class="companero">
+          <a href="https://usuario4.github.io" target="_blank">Diego Torres</a>
+          <span>github.io</span>
+        </div>
+
+        <!-- Copia este bloque para agregar más compañeros:
+        <div class="companero">
+          <a href="https://USUARIO.github.io" target="_blank">Nombre Apellido</a>
+          <span>github.io</span>
+        </div>
+        -->
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Hecho con HTML · 2026
+  </footer>
+
+</body>
+</html>
